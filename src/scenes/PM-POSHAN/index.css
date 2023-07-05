@@ -1,0 +1,52 @@
+.header_flex {
+    display: flex;
+}
+.frame-13,
+.frame-13 * {
+  box-sizing: border-box;
+}
+.frame-13 {
+  width: 1011px;
+  height: 292px;
+  position: relative;
+}
+.rectangle-6 {
+  background: #4F41F4;
+  width: 1011px;
+  height: 292px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.download-1 {
+  width: 210px;
+  height: 54px;
+  position: absolute;
+  left: 3px;
+  top: 15px;
+}
+.ndear-vidya-samiksha-kendra {
+  color: #ffffff;
+  text-align: left;
+  font: 400 20px "Inter", sans-serif;
+  position: absolute;
+  left: 233px;
+  top: 30px;
+}
+.pm-poshan {
+  color: #ffffff;
+  text-align: left;
+  font: 400 20px "Inter", sans-serif;
+  position: absolute;
+  left: 26px;
+  top: 96px;
+}
+.rectangle-7 {
+  background: #fcfdff;
+  border-radius: 29px;
+  width: 174px;
+  height: 159px;
+  position: absolute;
+  left: 26px;
+  top: 126px;
+}

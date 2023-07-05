@@ -1,0 +1,21 @@
+.fontBar{
+    min-height: 3rem;
+    background: #202342;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+    top: 0;
+    color: white;
+    width: 100%;
+}
+.flagArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flagImage{
+    margin-right: 0.5rem;
+}
