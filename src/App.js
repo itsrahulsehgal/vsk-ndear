@@ -1,8 +1,6 @@
 import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
 import Topbar from "./screens/global/Topbar";
-import Sidebar from "./screens/global/Sidebar";
-import routes from "./routes";
+import Sidebar from "./components/sidebar";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme";
 import Dashboard from "./screens/common-dashboard/index";
