@@ -1,14 +1,14 @@
-import Dashboard from "./scenes/dashboard";
-import NISHTHA from "./scenes/NISHTHA";
-import DIKSHAETB from "./scenes/DIKSHA-ETB";
-import PMPOSHAN from './scenes/PM-POSHAN'
-import MicroImprovements from "./scenes/Micro-improvements"
-import NAS from "./scenes/NAS";
-import UDISE from "./scenes/UDISE";
-import PGI from "./scenes/PGI";
-import NipunBharat from "./scenes/NIPUN-BHARAT";
-import NcertQuiz from "./scenes/NCERT-Quiz";
-import NCF from "./scenes/NCF";
+import Dashboard from "./screens/dashboard";
+import NISHTHA from "./screens/NISHTHA";
+import DIKSHAETB from "./screens/DIKSHA-ETB";
+import PMPOSHAN from './screens/PM-POSHAN'
+import MicroImprovements from "./screens/Micro-improvements"
+import NAS from "./screens/NAS";
+import UDISE from "./screens/UDISE";
+import PGI from "./screens/PGI";
+import NipunBharat from "./screens/NIPUN-BHARAT";
+import NcertQuiz from "./screens/NCERT-Quiz";
+import NCF from "./screens/NCF";
 
 const routes = [
     {

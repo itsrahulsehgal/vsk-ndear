@@ -6,22 +6,30 @@ import "react-pro-sidebar/dist/css/styles.css";
 import { tokens } from "../../theme";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-import CloseIcon from '@mui/icons-material/Close';
+import CloseIcon from "@mui/icons-material/Close";
+import programs from "../../programs.json";
+import { useAppContext } from "../../context";
+import images from '../../program-images-config';
 
-const Item = ({ title, to, icon, selected, setSelected }) => {
+const Item = ({ selected, setSelected, program }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+  const context= useAppContext();
+const icon = images[program.logo]
   return (
     <MenuItem
-      active={selected === title}
+      active={selected === program.title}
       style={{
         color: colors.grey[100],
       }}
-      onClick={() => setSelected(title)}
-      icon={icon}
+      onClick={() => {
+        setSelected(program.title);
+       context?.setActiveProgram(program);
+      }}
+      //icon={program.logo || <HomeOutlinedIcon />}
+      icon={<img src={icon} alt="program-logo" height={35} style={{maxWidth:'35px'}} /> }
     >
-      <Typography>{title}</Typography>
-      <Link to={to} />
+      <Typography style={{fontSize:'22px',fontWeight:'bold'}}>{program.title}</Typography>
     </MenuItem>
   );
 };
@@ -57,7 +65,7 @@ const Sidebar = () => {
           {/* LOGO AND MENU ICON */}
           <MenuItem
             onClick={() => setIsCollapsed(!isCollapsed)}
-            icon={isCollapsed ? <MenuOutlinedIcon /> : <CloseIcon/>}
+            icon={isCollapsed ? <MenuOutlinedIcon /> : <CloseIcon />}
             style={{
               margin: "10px 0 20px 0",
               color: colors.grey[100],
@@ -68,16 +76,21 @@ const Sidebar = () => {
                 display="flex"
                 justifyContent="space-between"
                 alignItems="center"
-                
-              >
-              </Box>
+              ></Box>
             )}
           </MenuItem>
 
-          
-
           <Box>
-            <Item
+            {programs.map((program) => (
+              <Item
+                key={program.id}
+                program={program}
+                icon={program.logo || <HomeOutlinedIcon />}
+                selected={selected}
+                setSelected={setSelected}
+              />
+            ))}
+            {/* <Item
               title="Dashboard"
               to="/"
               icon={<HomeOutlinedIcon />}
@@ -153,7 +166,7 @@ const Sidebar = () => {
               icon={<HomeOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
-            />
+            /> */}
           </Box>
         </Menu>
       </ProSidebar>

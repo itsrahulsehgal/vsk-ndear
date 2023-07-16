@@ -1,6 +1,4 @@
 import { Box } from "@mui/material";
-import Iframe from 'react-iframe';
-import { Image } from "@mui/icons-material";
 import './index.css'
 const NAS = () => {
 
@@ -19,7 +17,7 @@ const NAS = () => {
       </Box>
         <iframe
         title="Diksha-ETB"
-        src="http://20.120.97.100:8088/superset/dashboard/p/ZMKk5pJ3Qp0"
+        src="http://20.120.97.100:8088/superset/dashboard/p/ZMKk5pJ3Qp0/?standalone=3"
         style={{ height: "80vh", width: "100%", marginTop: "50px"}}
       />
     </Box>

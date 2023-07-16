@@ -26,10 +26,10 @@ const DIKSHAETB = () => {
         position="relative"/> */}
       <iframe
         title="Diksha-ETB"
-        src="http://20.120.97.100:8088/superset/dashboard/p/Xmq3lNNnjzD"
+        src="http://20.120.97.100:8088/superset/dashboard/p/Xmq3lNNnjzD?standalone=1"
         style={{ height: "80vh", width: "100%", marginTop: "50px"}}
       />
-      <iframe
+      {/* <iframe
   width="600"
   height="400"
   seamless
@@ -37,7 +37,7 @@ const DIKSHAETB = () => {
   scrolling="no"
   src="http://20.120.97.100:8088/superset/explore/p/eRZ0vLdwq8D/?standalone=1&height=400"
 >
-</iframe>
+</iframe> */}
     </Box>
 
   );
