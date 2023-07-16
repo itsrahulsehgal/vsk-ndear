@@ -4,3 +4,8 @@
     position: sticky;
     top: var(--offset);
 }
+
+.pro-sidebar .collapsed {
+    width: 103px !important;
+    min-width: 103px !important;
+}

@@ -1,0 +1,18 @@
+[
+    {
+        "id":"1",
+        "name":"NAS",
+        "title":"NAS",
+        "logo":"nas",
+        "description":"National Achievement Survey (NAS)",
+        "dashboard_url":"http://20.120.97.100:8088/superset/dashboard/p/ZMKk5pJ3Qp0/?standalone=3"
+    },
+    {
+        "id":"2",
+        "name":"Diksha",
+        "title":"Diksha",
+        "logo":"diksha",
+        "description":"",
+        "dashboard_url":"http://20.120.97.100:8088/superset/dashboard/p/Xmq3lNNnjzD?standalone=1"
+    }
+]
