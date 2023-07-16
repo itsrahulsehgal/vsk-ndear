@@ -2,8 +2,7 @@ import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Topbar from "./scenes/global/Topbar";
 import Sidebar from "./scenes/global/Sidebar";
-import routes from './routes'
-
+import routes from './routes';
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme";
 
@@ -17,7 +16,7 @@ function App() {
         <CssBaseline />
         <Topbar setIsSidebar={setIsSidebar} />
         <div className="app">
-          <Sidebar isSidebar={isSidebar} />
+          <Sidebar isSidebar={isSidebar} className ="fixed-sidebar"/>
           <main className="content">
 
             <Routes>

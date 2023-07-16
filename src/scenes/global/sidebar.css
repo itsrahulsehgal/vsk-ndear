@@ -1,0 +1,6 @@
+.fixed-sidebar{
+    --offset: var(--space);
+    /* ... */
+    position: sticky;
+    top: var(--offset);
+}

@@ -4,21 +4,35 @@ html,
 body,
 #root,
 .app,
-.content{
+.content {
   height: 100%;
   width: 100%;
   font-family: "Source Sans Pro", sans-serif;
 }
+
 .topbar {
-  height: 50px; 
+  height: 50px;
+}
+.sidebar{
+  position: sticky;
 }
 .app {
   display: flex;
   position: relative;
 }
 
+main{
+  overflow:scroll;
+  overflow-x:hidden;
+}
+
+main::-webkit-scrollbar {
+  width: 10px;
+  display: inline;
+}
 ::-webkit-scrollbar {
   width: 10px;
+  display: none;
 }
 
 /* Track */
@@ -34,5 +48,4 @@ body,
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
-}
-
+} 

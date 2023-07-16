@@ -1,0 +1,119 @@
+.frame-20,
+.frame-20 * {
+  box-sizing: border-box;
+}
+.frame-20 {
+width: 550px;
+  height: 171px;
+  position: relative;
+  background-color:white;
+  border-radius: 25px;
+  margin: 10px;
+}
+.frame-19 {
+  width: 423px;
+  height: 36px;
+  position: absolute;
+  left: 65px;
+  top: 0px;
+  margin: 10px;
+}
+.nishtha {
+  color: #000000;
+  text-align: center;
+  font: 400 20px "Inter", sans-serif;
+  position: absolute;
+  left: 0px;
+  top: 6px;
+}
+.nishtha-01-01-1 {
+  width: 64px;
+  height: 36px;
+  position: absolute;
+  left: 359px;
+  top: 0px;
+}
+.frame-15 {
+  width: 310px;
+  height: 52px;
+  position: absolute;
+  left: 0px;
+  top: 70px;
+}
+._57-94-l {
+  color: #003db6;
+  text-align: center;
+  font: 400 20px "Inter", sans-serif;
+  position: absolute;
+  left: 105px;
+  top: 0px;
+  width: 99px;
+  height: 21px;
+}
+.total-teachers-participated {
+  color: #000000;
+  text-align: center;
+  font: 400 11px "Inter", sans-serif;
+  position: absolute;
+  left: 0px;
+  top: 27px;
+  width: 310px;
+  height: 25px;
+}
+.frame-16 {
+  width: 310px;
+  height: 52px;
+  position: absolute;
+  left: 252px;
+  top: 70px;
+}
+._4-03-k {
+  color: #003db6;
+  text-align: center;
+  font: 400 20px "Inter", sans-serif;
+  position: absolute;
+  left: 105px;
+  top: 0px;
+  width: 99px;
+  height: 21px;
+}
+.total-courses-launched {
+  color: #000000;
+  text-align: center;
+  font: 400 11px "Inter", sans-serif;
+  position: absolute;
+  left: 0px;
+  top: 27px;
+  width: 310px;
+  height: 25px;
+}
+.frame-17 {
+  width: 404px;
+  height: 30px;
+  position: absolute;
+  left: 74px;
+  top: 131px;
+  border-radius: 25px;
+}
+.access-dashboard {
+  color: #000000;
+  text-align: center;
+  font: 400 12px "Inter", sans-serif;
+  position: absolute;
+  left: 138px;
+  top: 8px;
+  width: 128px;
+  height: 14px;
+}
+.rectangle-9 {
+  border-radius: 25px;
+  border-style: solid;
+  border-color: #d0cbcb;
+  border-width: 1px;
+  width: 404px;
+  height: 30px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin-bottom: 10px
+}

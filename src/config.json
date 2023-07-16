@@ -1,0 +1,83 @@
+{
+    "name": [
+        {
+            "Title": "Dashboard"
+        },
+        {
+            "Title": "NISHTHA"
+        },
+        {
+            "Title": "DIKSHA-ETB"
+        },
+        {
+            "Title": "Micro-Improvements"
+        },
+        {
+            "Title": "PM-POSHAN"
+        },
+        {
+            "Title": "NAS"
+        },
+        {
+            "Title": "UDISE+"
+        },
+        {
+            "Title": "PGI"
+        },
+        {
+            "Title": "Nipun Bharat"
+        },
+        {
+            "Title": "Ncert Quiz"
+        },
+        {
+            "Title": "NCF"
+        }
+    ],
+    "routes": [
+        {
+            "path": "/",
+            "component": "Dashboard"
+        },
+        {
+            "path": "/NISHTHA",
+            "component": "NISHTHA"
+        },
+        {
+            "path": "/DIKSHAETB",
+            "component": "DIKSHAETB"
+        },
+        {
+            "path": "/MicroImprovements",
+            "component": "MicroImprovements"
+        },
+        {
+            "path": "/PMPOSHAN",
+            "component": "PMPOSHAN"
+        },
+        {
+            "path": "/NAS",
+            "component": "NAS"
+        },
+        {
+            "path": "/UDISE",
+            "component": "UDISE"
+        },
+        {
+            "path": "/PGI",
+            "component": "PGI"
+        },
+        {
+            "path": "/NipunBharat",
+            "component": "NipunBharat"
+        },
+        {
+            "path": "/NcertQuiz",
+            "component": "NcertQuiz"
+        },
+        {
+            "path": "/NCF",
+            "component": "NCF"
+        }
+    ]
+}

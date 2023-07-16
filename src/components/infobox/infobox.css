@@ -1,0 +1,48 @@
+
+.Frame14 {
+    width: 195px;
+    height: 187px;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Rectangle8 {
+    width: 195px;
+    height: 187px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: #FCFDFF;
+    border-radius: 29px;
+    
+  }
+  
+  .value {
+    width: 78px;
+    height: 8px;
+    left: 59px;
+    top: 39px;
+    position: absolute;
+    text-align: center;
+    color: #003DB6;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+    justify-items: center;
+  }
+  
+  .Context {
+    top: 87px;
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+    justify-items: center;
+  }
