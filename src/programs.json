@@ -14,5 +14,13 @@
         "logo":"diksha",
         "description":"",
         "dashboard_url":"http://20.120.97.100:8088/superset/dashboard/p/Xmq3lNNnjzD?standalone=1"
+    },
+    {
+        "id":"3",
+        "name":"PM Poshan",
+        "title":"PM Poshan",
+        "logo":"pmposhan",
+        "description":"",
+        "dashboard_url":"http://20.120.97.100:8088/superset/dashboard/p/DabnEG93wXx?standalone=1"
     }
 ]
