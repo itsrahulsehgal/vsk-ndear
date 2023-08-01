@@ -4,6 +4,7 @@
         "name":"NAS",
         "title":"NAS",
         "logo":"nas",
+        "userRole":[1,2,3],
         "description":"National Achievement Survey (NAS)",
         "dashboard_url":"http://20.120.97.100:8088/superset/dashboard/p/ZMKk5pJ3Qp0/?standalone=3"
     },
@@ -12,6 +13,7 @@
         "name":"Diksha",
         "title":"Diksha",
         "logo":"diksha",
+        "userRole":[1,2,3],
         "description":"",
         "dashboard_url":"http://20.120.97.100:8088/superset/dashboard/p/Xmq3lNNnjzD?standalone=1"
     },
@@ -20,6 +22,7 @@
         "name":"PM Poshan",
         "title":"PM Poshan",
         "logo":"pmposhan",
+        "userRole":[1,2,3],
         "description":"",
         "dashboard_url":"http://20.120.97.100:8088/superset/dashboard/p/DabnEG93wXx?standalone=1"
     }

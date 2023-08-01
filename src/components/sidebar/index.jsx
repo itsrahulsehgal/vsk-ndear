@@ -12,11 +12,16 @@ import "react-pro-sidebar/dist/css/styles.css";
 import "./sidebar.css";
 
 
-const Item = ({ selected, setSelected, program }) => {
+const Item = ({ selected, setSelected, program, userRole }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const context = useAppContext();
   const icon = images[program.logo];
+  const isRoleAllowed = program.userRole.includes();
+  if (isRoleAllowed) {
+    return null; // Do not render this program card if the user role is not allowed
+  }
+
   return (
     <MenuItem
       active={selected === program.title}

@@ -1,0 +1,103 @@
+.frame-24,
+.frame-24 * {
+  box-sizing: border-box;
+}
+.frame-24 {
+  width: 1949px;
+  height: 1212px;
+  position: relative;
+}
+.rectangle-10 {
+  background: #202342;
+  width: 330px;
+  height: 1212px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.frame-21 {
+  width: 1186px;
+  height: 145px;
+  position: absolute;
+  left: 763px;
+  top: 568px;
+}
+.principle-2 {
+  width: 161px;
+  height: 145px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.principle-3 {
+  width: 161px;
+  height: 145px;
+  position: absolute;
+  left: 205px;
+  top: 0px;
+}
+.principle-4 {
+  width: 161px;
+  height: 145px;
+  position: absolute;
+  left: 410px;
+  top: 0px;
+}
+.principle-5 {
+  width: 161px;
+  height: 145px;
+  position: absolute;
+  left: 615px;
+  top: 0px;
+}
+.principle-6 {
+  width: 161px;
+  height: 145px;
+  position: absolute;
+  left: 820px;
+  top: 0px;
+}
+.principle-7 {
+  width: 161px;
+  height: 145px;
+  position: absolute;
+  left: 1025px;
+  top: 0px;
+}
+.frame-23 {
+  width: 1026px;
+  height: 145px;
+  position: absolute;
+  left: 330px;
+  top: 0px;
+}
+.principle-1 {
+  width: 161px;
+  height: 145px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.jharkhand-vidya-samiksha-kendra-vsk {
+  color: #000000;
+  text-align: left;
+  font: 700 36px "Inter", sans-serif;
+  position: absolute;
+  left: 176px;
+  top: 51px;
+}
+.frame-22 {
+  width: 576px;
+  height: 324px;
+  position: absolute;
+  left: 1087px;
+  top: 244px;
+}
+.please-select-your-role {
+  color: #000000;
+  text-align: center;
+  font: 500 40px "Inter", sans-serif;
+  position: absolute;
+  left: 72px;
+  top: 228px;
+}
