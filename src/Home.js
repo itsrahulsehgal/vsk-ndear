@@ -4,6 +4,7 @@ import Topbar from "./screens/global/Topbar";
 import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { AppContextProvider } from "./context";
+
 const Home = () => {
   const officers = [
     { id: 1, name: "State Officer" , url: "https://file.rendit.io/n/iyK2MXcjoXK9tEGHCpK2.png"},
@@ -13,7 +14,6 @@ const Home = () => {
     { id: 5, name: "Principal", url: "https://file.rendit.io/n/CzItUjDnPwXCQBEukRiO.png"  },
     { id: 6, name: "Class Teacher", url: "https://file.rendit.io/n/0V9VQrxzjFPpMWGBqqlC.png"  },
   ];
-
   const [theme, colorMode] = useMode();
 
   return (
@@ -51,33 +51,9 @@ const Home = () => {
                 <br />
               </div>
               <div className="flex flex-row justify-between mx-80 my-20">
-                {/* Add the img tags for the images here */}
-                {/* <img
-                  src="https://file.rendit.io/n/CzItUjDnPwXCQBEukRiO.png"
-                  className="min-h-0 min-w-0"
-                />
-                <img
-                  src="https://file.rendit.io/n/CzItUjDnPwXCQBEukRiO.png"
-                  className="min-h-0 min-w-0"
-                />
-                <img
-                  src="https://file.rendit.io/n/CzItUjDnPwXCQBEukRiO.png"
-                  className="min-h-0 min-w-0"
-                />
-                <img
-                  src="https://file.rendit.io/n/CzItUjDnPwXCQBEukRiO.png"
-                  className="min-h-0 min-w-0"
-                />
-                <img
-                  src="https://file.rendit.io/n/CzItUjDnPwXCQBEukRiO.png"
-                  className="min-h-0 min-w-0"
-                />
-                <img
-                  src="https://file.rendit.io/n/CzItUjDnPwXCQBEukRiO.png"
-                  className="min-h-0 min-w-0"
-                /> */}
+                
                 {officers.map((officer) => (
-                <Link key={officer.id} to={`/programs/${officer.id}`}>
+                <Link key={officer.id} to={`/${officer.id}`}>
                   <img
                     src={officer.url}
                     className="min-h-0 min-w-0"
@@ -88,16 +64,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-
-
-          {/* <div className="card-container">
-          {officers.map((officer) => (
-            <div key={officer.id} className="card">
-              <h3>{officer.name}</h3>
-              <a href={`/programs/${officer.id}`}>View Programs</a>
-            </div>
-          ))}
-        </div> */}
         </AppContextProvider>
       </ThemeProvider>
     </ColorModeContext.Provider>

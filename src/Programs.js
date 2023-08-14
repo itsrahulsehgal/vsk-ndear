@@ -7,7 +7,7 @@ import { ColorModeContext, useMode } from "./theme";
 import Dashboard from "./screens/common-dashboard/index";
 import { AppContextProvider } from "./context";
 import programs from "./programs.json";
-const Programs = ({ match }) => {
+const Programs = ({Id}) => {
   const [theme, colorMode] = useMode();
   const [isSidebar, setIsSidebar] = useState(true);
   const [activeProgram, setActiveProgram] = useState(programs?.[0]);
@@ -18,7 +18,7 @@ const Programs = ({ match }) => {
           <CssBaseline />
           <Topbar setIsSidebar={setIsSidebar} />
           <div className="app">
-            <Sidebar isSidebar={isSidebar} className="fixed-sidebar" />
+            <Sidebar isSidebar={isSidebar} officerId = {Id} className="fixed-sidebar" />
             <main className="content">
               <Dashboard active={activeProgram}/>
             </main>

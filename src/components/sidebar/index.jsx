@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { Box, Typography, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
@@ -12,15 +12,83 @@ import "react-pro-sidebar/dist/css/styles.css";
 import "./sidebar.css";
 
 
-const Item = ({ selected, setSelected, program, userRole }) => {
+const Sidebar = ( {officerId} ) => {
+  const theme = useTheme();
+  const colors = tokens(theme.palette.mode);
+  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [selected, setSelected] = useState("Dashboard");
+  const filteredPrograms = programs.filter(program =>
+    program.userRole.includes(officerId)
+  );
+
+  return (
+    <Box
+      sx={{
+        "& .pro-sidebar-inner": {
+          background: `${colors.primary[400]} !important`,
+        },
+        "& .pro-icon-wrapper": {
+          backgroundColor: "transparent !important",
+        },
+        "& .pro-inner-item": {
+          padding: "5px 35px 5px 20px !important",
+        },
+        "& .pro-inner-item:hover": {
+          backgroundColor: "#4F41F4 !important",
+          borderRadius: "2rem",
+          transition:
+            "color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s",
+        },
+        "& .pro-menu-item.active": {
+          backgroundColor: "#4F41F4 !important",
+        },
+        "& .pro-sidebar.collapsed": {
+          width: "103px !important",
+          minWidth: "103px !important",
+        },
+      }}
+    >
+      <ProSidebar collapsed={isCollapsed}>
+        <Menu iconShape="circle">
+          {/* LOGO AND MENU ICON */}
+          <MenuItem
+            onClick={() => setIsCollapsed(!isCollapsed)}
+            icon={isCollapsed ? <MenuOutlinedIcon /> : <CloseIcon />}
+            style={{
+              margin: "10px 0 20px 0",
+              color: colors.grey[100],
+            }}
+          >
+            {!isCollapsed && (
+              <Box
+                display="flex"
+                justifyContent="space-between"
+                alignItems="center"
+              ></Box>
+            )}
+          </MenuItem>
+
+          <Box>
+            {filteredPrograms.map((program) => (
+              <Item
+                key={program.id}
+                program={program}
+                icon={program.logo || <HomeOutlinedIcon />}
+                selected={selected}
+                setSelected={setSelected}
+              />
+            ))}
+          </Box>
+        </Menu>
+      </ProSidebar>
+    </Box>
+  );
+};
+const Item = ({ selected, setSelected, program }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const context = useAppContext();
   const icon = images[program.logo];
-  const isRoleAllowed = program.userRole.includes();
-  if (isRoleAllowed) {
-    return null; // Do not render this program card if the user role is not allowed
-  }
 
   return (
     <MenuItem
@@ -72,76 +140,6 @@ const Item = ({ selected, setSelected, program, userRole }) => {
         </Typography>
       </div>
     </MenuItem>
-  );
-};
-
-const Sidebar = () => {
-  const theme = useTheme();
-  const colors = tokens(theme.palette.mode);
-  const [isCollapsed, setIsCollapsed] = useState(false);
-  const [selected, setSelected] = useState("Dashboard");
-
-  return (
-    <Box
-      sx={{
-        "& .pro-sidebar-inner": {
-          background: `${colors.primary[400]} !important`,
-        },
-        "& .pro-icon-wrapper": {
-          backgroundColor: "transparent !important",
-        },
-        "& .pro-inner-item": {
-          padding: "5px 35px 5px 20px !important",
-        },
-        "& .pro-inner-item:hover": {
-          backgroundColor: "#4F41F4 !important",
-          borderRadius: "2rem",
-          transition:
-            "color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s",
-        },
-        "& .pro-menu-item.active": {
-          backgroundColor: "#4F41F4 !important",
-        },
-        "& .pro-sidebar.collapsed": {
-          width: "103px !important",
-          minWidth: "103px !important",
-        },
-      }}
-    >
-      <ProSidebar collapsed={isCollapsed}>
-        <Menu iconShape="circle">
-          {/* LOGO AND MENU ICON */}
-          <MenuItem
-            onClick={() => setIsCollapsed(!isCollapsed)}
-            icon={isCollapsed ? <MenuOutlinedIcon /> : <CloseIcon />}
-            style={{
-              margin: "10px 0 20px 0",
-              color: colors.grey[100],
-            }}
-          >
-            {!isCollapsed && (
-              <Box
-                display="flex"
-                justifyContent="space-between"
-                alignItems="center"
-              ></Box>
-            )}
-          </MenuItem>
-
-          <Box>
-            {programs.map((program) => (
-              <Item
-                key={program.id}
-                program={program}
-                icon={program.logo || <HomeOutlinedIcon />}
-                selected={selected}
-                setSelected={setSelected}
-              />
-            ))}
-          </Box>
-        </Menu>
-      </ProSidebar>
-    </Box>
   );
 };
 

@@ -1,9 +1,24 @@
 import React from "react";
 import { Box } from "@mui/material";
 import "./index.css";
+import { embedDashboard } from "@superset-ui/embedded-sdk";
+// embedDashboard({
+//   id: "abc123", // given by the Superset embedding UI
+//   supersetDomain: "http://20.120.97.100:8088/superset/dashboard/p/Xmq3lNNnjzD?standalone=1",
+//   mountPoint: <iframe
+//   src="http://20.120.97.100:8088/superset/dashboard/p/Xmq3lNNnjzD?standalone=1"
+//   style={{ height: "80vh", width: "100%", marginTop: "50px" }}
+// />, // any html element that can contain an iframe
+//   dashboardUiConfig: { // dashboard UI config: hideTitle, hideTab, hideChartControls, filters.visible, filters.expanded (optional)
+//       hideTitle: true,
+//       filters: {
+//           expanded: true,
+//       }
+//   },
+// });
+
 
 const Dashboard = ({ active }) => {
-  console.log({ active });
   return (
     <Box m="20px">
       {/* HEADER */}
